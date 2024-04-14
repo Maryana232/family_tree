@@ -1,0 +1,5 @@
+.idea
+vendor
+cache
+docs.docx
+composer.lock
