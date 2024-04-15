@@ -1,13 +1,13 @@
 <?php
 
-namespace Marianna\FamilyTree;
+namespace Mariana\FamilyTree;
 
 use Exception;
 use PDO;
 
 /**
  * Class Tree
- * @package Marianna\FamilyTree
+ * @package Mariana\FamilyTree
  * Клас для побудови фамільного дерева
  */
 class Tree

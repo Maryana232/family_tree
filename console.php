@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 
-use Marianna\FamilyTree\{Database, Person, Tree};
+use Mariana\FamilyTree\{Database, Person, Tree};
 
 // Підключення до бази даних (використовується для всіх запитів)
 Database::getInstance();

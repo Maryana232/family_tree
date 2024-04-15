@@ -1,5 +1,5 @@
 <?php
-namespace Marianna\FamilyTree;
+namespace Mariana\FamilyTree;
 
 use PDO;
 

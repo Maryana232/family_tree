@@ -1,13 +1,13 @@
 <?php
 
-namespace Marianna\FamilyTree\Controllers;
+namespace Mariana\FamilyTree\Controllers;
 
 use Jenssegers\Blade\Blade;
-use Marianna\FamilyTree\Table;
+use Mariana\FamilyTree\Table;
 
 /**
  * Class TableController
- * @package Marianna\FamilyTree\Controllers
+ * @package Mariana\FamilyTree\Controllers
  * Контролер для роботи з таблицею
  * Цей контролер відповідає за відображення таблиці з людьми
  * Також відповідає за пагінацію

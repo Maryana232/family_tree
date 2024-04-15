@@ -5,11 +5,7 @@
     <h2 class="mb-4 w-75 mx-auto">Cімейне дерево</h2>
     {{-- Онуки --}}
     <div class="row mb-4 w-75 mx-auto d-flex justify-content-center gap-4">
-        @php
-            $grandChildren = $tree->getGrandchildren();  // Отримання внуків
-        @endphp
-
-        @if(count($grandChildren) === 0)
+        @if(count($tree->getGrandchildren()) === 0)
             <div class="card col-4">
                 <div class="card-title text-center">
                     <h2>Онуки</h2>
@@ -21,17 +17,17 @@
                 </div>
             </div>
         @else
-            @foreach ($grandChildren as $grandChild)
+            @foreach ($tree->getGrandchildren() as $grandChild)
                 <div class="card col-4">
                     <div class="card-title text-center">
                         <h2>{{ $grandChild->getGender() === "ч" ? "Онук" : "Онука" }}</h2>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">Имя: {{ $grandChild->getFirstName() }}</p>
-                        <p class="card-text">Фамилия: {{ $grandChild->getLastName() }}</p>
-                        <p class="card-text">Дата рождения: {{ $grandChild->getBirthDate() }}</p>
-                        <p class="card-text">Дата смерти: {{ $grandChild->getDeathDate() ?? "Живий" }}</p>
-                        {{-- Ссылка на информацию о внуке --}}
+                        <p class="card-text">Ім'я: {{ $grandChild->getFirstName() }}</p>
+                        <p class="card-text">Прізвище: {{ $grandChild->getLastName() }}</p>
+                        <p class="card-text">Дата народження: {{ $grandChild->getBirthDate() }}</p>
+                        <p class="card-text">Дата смерті: {{ $grandChild->getDeathDate() ?? "Живий" }}</p>
+                        {{-- Посилання на онука --}}
                         <p class="card-text">
                             <a href="/person?id={{ $grandChild->getId() }}" class="text-decoration-none btn btn-outline-secondary text-dark">
                                 Подивитись онука

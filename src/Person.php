@@ -1,12 +1,12 @@
 <?php
 
-namespace Marianna\FamilyTree;
+namespace Mariana\FamilyTree;
 
 use PDO;
 
 /**
  * Class Person
- * @package Marianna\FamilyTree
+ * @package Mariana\FamilyTree
  * Клас для роботи з людьми
  * Цей клас відповідає за роботу з людьми
  * Він відповідає за завантаження, збереження, видалення та редагування даних про людину

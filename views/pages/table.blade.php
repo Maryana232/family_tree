@@ -1,3 +1,4 @@
+@php use Carbon\Carbon; @endphp
 @include('parts/head')
 @include('parts/nav')
 
@@ -36,21 +37,16 @@
                         {{$personOnPage->getGender()}}
                     </td>
                     <td>
-                        @if($personOnPage->getBirthDate() && $personOnPage->getDeathDate() === null)
-                        {{
-                            // Порахувати різницю між датою народження та поточною датою
-                            \Carbon\Carbon::parse($personOnPage->getBirthDate())->diffInYears(\Carbon\Carbon::now())
-                        }}
-                        @elseif($personOnPage->getDeathDate())
-                        {{
-                            // Порахувати різницю між датами
-                            \Carbon\Carbon::parse($personOnPage->getBirthDate())->diffInYears($personOnPage->getDeathDate())
-                        }}
+                        @if($personOnPage->getBirthDate())
+                            @php
+                                // Використовуємо Carbon для розрахунку віку
+                                $deathDate = $personOnPage->getDeathDate() ?? Carbon::now();
+                                $age = Carbon::parse($personOnPage->getBirthDate())->diffInYears($deathDate);
+                            @endphp
+                            {{ floor($age) }}
                         @else
-                            <span class="badge bg-secondary-subtle rounded-pill">
-                                null
-                            </span>
-                        @endif
+                            <span class="badge bg-secondary-subtle rounded-pill">null</span>
+                    @endif
                     <td>
                         @if($personOnPage->getBirthDate())
                             {{ $personOnPage->getBirthDate() }}
@@ -135,11 +131,12 @@
 
                 {{-- Кнопка "Вперед" --}}
                 <li class="page-item {{$currentPage == $totalPages ? 'disabled' : ''}}">
-                    <a class="page-link text-black" href="/table?page={{ min($currentPage + 1, $totalPages) }}">&raquo;</a>
+                    <a class="page-link text-black"
+                       href="/table?page={{ min($currentPage + 1, $totalPages) }}">&raquo;</a>
                 </li>
             </ul>
         </nav>
     </div>
- </div>
+</div>
 
 @include('parts/footer')

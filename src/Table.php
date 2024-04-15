@@ -1,13 +1,13 @@
 <?php
 
-namespace Marianna\FamilyTree;
+namespace Mariana\FamilyTree;
 
 use Exception;
 use PDO;
 
 /**
  * Class Table
- * @package Marianna\FamilyTree
+ * @package Mariana\FamilyTree
  * Клас для роботи з таблицями
  * Цей клас відповідає за роботу з таблицями
  * Він відповідає за завантаження, збереження, видалення та редагування даних в таблицях

@@ -1,10 +1,10 @@
 <?php
 
-namespace Marianna\FamilyTree;
+namespace Mariana\FamilyTree;
 
 /**
  * Class Router
- * @package Marianna\FamilyTree
+ * @package Mariana\FamilyTree
  * Клас для роботи з маршрутами
  * Цей клас відповідає за обробку запитів користувача
  * Він визначає, який контролер потрібно викликати для обробки запиту

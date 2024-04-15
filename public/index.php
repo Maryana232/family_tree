@@ -2,13 +2,13 @@
 
 require '../vendor/autoload.php';
 
-use Marianna\FamilyTree\Application;
+use Mariana\FamilyTree\Application;
 
 $app = Application::getInstance();
 $app->run();
 
 
-//$faker = new Marianna\FamilyTree\Faker(100);
+//$faker = new Mariana\FamilyTree\Faker(100);
 //$faker->savePeopleToDatabase();
 
 // консольна команда

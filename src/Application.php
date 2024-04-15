@@ -1,6 +1,6 @@
 <?php
 
-namespace Marianna\FamilyTree;
+namespace Mariana\FamilyTree;
 
 use Jenssegers\Blade\Blade;
 use FastRoute\RouteCollector;
@@ -9,7 +9,7 @@ use function FastRoute\simpleDispatcher;
 
 /**
  * Клас Application з Singleton для ініціалізації компонентів та запуску додатку
- * @package Marianna\FamilyTree
+ * @package Mariana\FamilyTree
  */
 class Application
 {

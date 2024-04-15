@@ -1,13 +1,13 @@
 <?php
 
-namespace Marianna\FamilyTree;
+namespace Mariana\FamilyTree;
 
 use Faker\Factory as FakerFactory;
-use Marianna\FamilyTree\Database;
+use Mariana\FamilyTree\Database;
 
 /**
  * Class Faker
- * @package Marianna\FamilyTree
+ * @package Mariana\FamilyTree
  * Генерує випадкових людей та зберігає їх в базу даних
  */
 class Faker

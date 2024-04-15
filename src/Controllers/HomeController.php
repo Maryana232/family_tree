@@ -1,13 +1,13 @@
 <?php
 
-namespace Marianna\FamilyTree\Controllers;
+namespace Mariana\FamilyTree\Controllers;
 
 use Jenssegers\Blade\Blade;
-use Marianna\FamilyTree\Post;
+use Mariana\FamilyTree\Post;
 
 /**
  * Class HomeController
- * @package Marianna\FamilyTree\Controllers
+ * @package Mariana\FamilyTree\Controllers
  * Контролер для головної сторінки
  * Цей контролер відповідає за відображення головної сторінки
  */

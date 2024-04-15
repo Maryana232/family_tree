@@ -1,13 +1,13 @@
 <?php
 
-namespace Marianna\FamilyTree;
+namespace Mariana\FamilyTree;
 
 use PDO;
 use PDOStatement;
 
 /**
  * Singleton клас Database
- * @package Marianna\FamilyTree
+ * @package Mariana\FamilyTree
  */
 class Database
 {

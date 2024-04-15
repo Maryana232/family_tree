@@ -1,15 +1,15 @@
 <?php
 
-namespace Marianna\FamilyTree\Controllers;
+namespace Mariana\FamilyTree\Controllers;
 
 use Jenssegers\Blade\Blade;
-use Marianna\FamilyTree\Person;
-use Marianna\FamilyTree\Table;
-use Marianna\FamilyTree\Tree;
+use Mariana\FamilyTree\Person;
+use Mariana\FamilyTree\Table;
+use Mariana\FamilyTree\Tree;
 
 /**
  * Class PersonController
- * @package Marianna\FamilyTree\Controllers
+ * @package Mariana\FamilyTree\Controllers
  * Контролер для роботи з людьми
  * Цей контролер відповідає за обробку запитів, що стосуються людей
  * Відповідає за відображення сторінок для додавання, редагування, видалення людей
